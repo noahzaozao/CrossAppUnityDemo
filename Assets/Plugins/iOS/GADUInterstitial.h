@@ -4,7 +4,7 @@
 
 #import "GADUTypes.h"
 
-@class GADInterstitial;
+@class DFPInterstitial;
 @class GADRequest;
 
 /// A wrapper around GADInterstitial. Includes the ability to create GADInterstitial objects, load
@@ -16,7 +16,7 @@
                                  adUnitID:(NSString *)adUnitID;
 
 /// The interstitial ad.
-@property(nonatomic, strong) GADInterstitial *interstitial;
+@property(nonatomic, strong) DFPInterstitial *interstitial;
 
 /// A reference to the Unity interstitial client.
 @property(nonatomic, assign) GADUTypeInterstitialClientRef *interstitialClient;
