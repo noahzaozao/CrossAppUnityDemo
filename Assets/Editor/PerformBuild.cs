@@ -62,6 +62,9 @@ class PerformBuild
 	[UnityEditor.MenuItem("Tools/PerformBuild/Test Command Line Build Step Android")]
 	static void CommandLineBuildAndroid ()
 	{
+		PlayerSettings.keystorePass = "111111";
+		PlayerSettings.keyaliasPass = "111111";
+
 		Debug.Log("Command line build android version\n------------------\n------------------");
 		
 		string[] scenes = GetBuildScenes();
