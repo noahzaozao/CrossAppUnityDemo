@@ -1,10 +1,11 @@
 // Copyright 2014 Google Inc. All Rights Reserved.
 
-@import CoreGraphics;
-@import Foundation;
-@import GoogleMobileAds;
-@import UIKit;
-@import StoreKit;
+#import <CoreGraphics/CoreGraphics.h>
+#import <Foundation/Foundation.h>
+
+#import "GoogleMobileAds/GoogleMobileAds.h"
+#import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
 
 #import "GADUInterstitial.h"
 
