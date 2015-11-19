@@ -54,31 +54,31 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour
 
         Rect requestBannerRect = new Rect(0.1f * Screen.width, 0.05f * Screen.height,
                                    0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(requestBannerRect, "Request Banner"))
-        {
-            RequestBanner();
-        }
-
-        Rect showBannerRect = new Rect(0.1f * Screen.width, 0.175f * Screen.height,
-                                       0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(showBannerRect, "Show Banner"))
-        {
-            bannerView.Show();
-        }
-
-        Rect hideBannerRect = new Rect(0.1f * Screen.width, 0.3f * Screen.height,
-                                       0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(hideBannerRect, "Hide Banner"))
-        {
-            bannerView.Hide();
-        }
-
-        Rect destroyBannerRect = new Rect(0.1f * Screen.width, 0.425f * Screen.height,
-                                          0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(destroyBannerRect, "Destroy Banner"))
-        {
-            bannerView.Destroy();
-        }
+//        if (GUI.Button(requestBannerRect, "Request Banner"))
+//        {
+//            RequestBanner();
+//        }
+//
+//        Rect showBannerRect = new Rect(0.1f * Screen.width, 0.175f * Screen.height,
+//                                       0.8f * Screen.width, 0.1f * Screen.height);
+//        if (GUI.Button(showBannerRect, "Show Banner"))
+//        {
+//            bannerView.Show();
+//        }
+//
+//        Rect hideBannerRect = new Rect(0.1f * Screen.width, 0.3f * Screen.height,
+//                                       0.8f * Screen.width, 0.1f * Screen.height);
+//        if (GUI.Button(hideBannerRect, "Hide Banner"))
+//        {
+//            bannerView.Hide();
+//        }
+//
+//        Rect destroyBannerRect = new Rect(0.1f * Screen.width, 0.425f * Screen.height,
+//                                          0.8f * Screen.width, 0.1f * Screen.height);
+//        if (GUI.Button(destroyBannerRect, "Destroy Banner"))
+//        {
+//            bannerView.Destroy();
+//        }
 
         Rect requestInterstitialRect = new Rect(0.1f * Screen.width, 0.55f * Screen.height,
                                                 0.8f * Screen.width, 0.1f * Screen.height);
@@ -87,19 +87,19 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour
             RequestInterstitial();
         }
 
-        Rect showInterstitialRect = new Rect(0.1f * Screen.width, 0.675f * Screen.height,
-                                             0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(showInterstitialRect, "Show Interstitial"))
-        {
-            ShowInterstitial();
-        }
+//        Rect showInterstitialRect = new Rect(0.1f * Screen.width, 0.675f * Screen.height,
+//                                             0.8f * Screen.width, 0.1f * Screen.height);
+//        if (GUI.Button(showInterstitialRect, "Show Interstitial"))
+//        {
+//            ShowInterstitial();
+//        }
 
-        Rect destroyInterstitialRect = new Rect(0.1f * Screen.width, 0.8f * Screen.height,
-                                                0.8f * Screen.width, 0.1f * Screen.height);
-        if (GUI.Button(destroyInterstitialRect, "Destroy Interstitial"))
-        {
-            interstitial.Destroy();
-        }
+//        Rect destroyInterstitialRect = new Rect(0.1f * Screen.width, 0.8f * Screen.height,
+//                                                0.8f * Screen.width, 0.1f * Screen.height);
+//        if (GUI.Button(destroyInterstitialRect, "Destroy Interstitial"))
+//        {
+//            interstitial.Destroy();
+//        }
 
         Rect textOutputRect = new Rect(0.1f * Screen.width, 0.925f * Screen.height,
                                    0.8f * Screen.width, 0.05f * Screen.height);
@@ -224,6 +224,7 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour
     public void HandleInterstitialLoaded(object sender, EventArgs args)
     {
         print("HandleInterstitialLoaded event received.");
+		ShowInterstitial();
     }
 
     public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args)
